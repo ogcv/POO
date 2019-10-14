@@ -21,6 +21,19 @@ require "pry"
 				return @@user_count
 			end
 
+			def self.find_by_email(email)
+				@@all_users.each do |user|
+					if user.email == email
+
+					return user 
+				end
+
+				puts "aucun utilisateur n'a cet email"
+				return false
+			end
+		end
+
+
 
 end
 
